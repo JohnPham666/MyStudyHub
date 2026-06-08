@@ -1,0 +1,14 @@
+{
+  "name": "study-flow-fullstack",
+  "version": "1.0.0",
+  "description": "Study Flow Fullstack project",
+  "scripts": {
+    "start": "concurrently \"npm run start:backend\" \"npm run start:frontend\"",
+    "start:frontend": "cd frontend && npm run dev",
+    "start:backend": "cd backend && .\\mvnw spring-boot:run",
+    "install:all": "cd frontend && npm install"
+  },
+  "devDependencies": {
+    "concurrently": "^8.2.2"
+  }
+}
